@@ -1,0 +1,46 @@
+@keyframes heartbeat {
+	from {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.4);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes cup-win {
+	from {
+		transform: skew(0);
+	} 
+	15% {
+		transform: skew(-20deg, 20deg);
+		transform-origin: 40% 60%;
+	}    
+	30% {
+		transform: skew(0);
+	}
+	45% {
+		transform: skew(-20deg, 20deg);
+		transform-origin: 40% 60%;
+	}
+	60% {
+		transform: skew(0);
+	}
+	to {
+		transform: skew(0);
+	}
+}
+
+@keyframes shoe-run {
+	from {
+		transform: skew(-30deg, 20deg);
+	}
+	50% {
+		transform: skew(0);
+	}
+	to {
+		transform: skew(-30deg, 20deg);
+	}
+}
