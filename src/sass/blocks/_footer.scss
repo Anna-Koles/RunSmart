@@ -7,7 +7,7 @@
         border: 0;
     }
     &__info {
-        position: absolute;
+        position: absolute; // чтобы наложить поверх карты
         top: 0;
         left: 50%;
         transform: translateX(-50%);

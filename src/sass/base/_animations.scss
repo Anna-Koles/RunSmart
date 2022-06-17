@@ -3,7 +3,7 @@
 		transform: scale(1);
 	}
 	50% {
-		transform: scale(1.4);
+		transform: scale(1.4);	// увеличение размера
 	}
 	to {
 		transform: scale(1);
@@ -15,8 +15,8 @@
 		transform: skew(0);
 	} 
 	15% {
-		transform: skew(-20deg, 20deg);
-		transform-origin: 40% 60%;
+		transform: skew(-20deg, 20deg);	// смещение под углом
+		transform-origin: 40% 60%; // смещение центра трансформации
 	}    
 	30% {
 		transform: skew(0);

@@ -32,7 +32,7 @@
     }
     &__icon {
         &_animated1 {
-            animation: cup-win 2s infinite;
+            animation: cup-win 2s infinite;  // название анимации, сколько длится и сколько повторяется (здесь бесконечно)
             &:hover {
                 animation-play-state: paused;
             }

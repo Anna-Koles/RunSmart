@@ -4,7 +4,7 @@
     width: 100%;
     height: 100%;
     top: 0;
-    background-color: rgba(0,0,0, .56);
+    background-color: rgba(0,0,0, .56); // прозрачность задана через альфа-канал, не opacity, чтобы содержимое (в данном случае - модальные окна) не стало тоже прозрачным
 }
 .modal {
     position: absolute;
@@ -12,14 +12,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 380px;
-    min-height: 400px;
+    min-height: 400px; // минимальная, чтобы оно могло увеличиваться, когда например появляется надпись, что что-то не заполнено 
     background-color: #f2f2f2;
     padding: 38px 40px 40px 40px;
     &__close {
         position: absolute;
         top: 0;
         right: -40px;
-        font-size: 41px;
+        font-size: 41px; // с символом х (крестик закрытия) можно работать, как с обычным шрифтом, т.к. он создан спецсимволом HTML
         line-height: 21px;
         color: $main-color;
         cursor: pointer;

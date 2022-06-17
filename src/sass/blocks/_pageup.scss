@@ -1,6 +1,6 @@
 .pageup {
     display: none;
-    position: fixed;
+    position: fixed; // чтобы стрелка вверх всегда была на экране, как например "липкое" меню
     bottom: 40px;
     right: 40px;
     width: 40px;

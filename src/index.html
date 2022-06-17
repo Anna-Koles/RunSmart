@@ -40,10 +40,10 @@
 						на все вопросы
 					</div>
 				</div>
-				<button data-modal="consultation" class="button button_main">заказать консультацию</button>
+				<button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
 				<div class="promo__link">
 					или
-					<a href="#catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
+					<a href="catalog.html">ПЕРЕЙТИ В КАТАЛОГ</a>
 				</div>
 			</div>
 		</div>
@@ -105,7 +105,7 @@
 			</div>
 		</div>
 	</div>
-	<section id="catalog" class="catalog">
+	<section class="catalog">
 		<div class="container">
 			<h2 class="title">Каталог пульсометров</h2>
 			<ul class="catalog__tabs">
@@ -414,7 +414,7 @@
 		<div class="container">
 			<h2 class="title">отзывы клиентов</h2>
 			<div class="reviews__wrapper">
-				<div class="reviews__item fadeInUp wow" data-wow-duration="2s">
+				<div class="reviews__item fadeInUp wow" data-wow-duration="2s"> <!-- fadeInUp - применение анимации из Animate.css, библиотека Wow.js - чтобы отзывы плавно выплывали вверх, когда пользователь долистает до них, а не сразу при загрузке страницы; data-wow-duration - продолжительность анимации, data-wow-delay (ниже) - задержка-->
 					<img src="img/ivanchenko.jpg" alt="ivanchenko" class="reviews__icon">
 					<div class="reviews__text">
 					<div class="reviews__names">Ирина Иванченко</div>
@@ -448,9 +448,9 @@
 			<address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
 			<a class="footer__phone" href="tel:84999228974">8 (499) 922-89-74</a>
 			<div class="footer__social">
-				<a href="https://www.facebook.com/" class="footer__social-item"><img src="icons/facebook.png" alt="facebook"></a>
-				<a href="https://www.instagram.com/" class="footer__social-item"><img src="icons/instagram.png" alt="instagram"></a>
-				<a href="https://www.pinterest.ru/" class="footer__social-item"><img src="icons/pinterest.png" alt="pinterest"></a>
+				<a href="#" class="footer__social-item"><img src="icons/facebook.png" alt="facebook"></a>
+				<a href="#" class="footer__social-item"><img src="icons/instagram.png" alt="instagram"></a>
+				<a href="#" class="footer__social-item"><img src="icons/pinterest.png" alt="pinterest"></a>
 			</div>
 		</div>
 	</footer>
@@ -458,6 +458,7 @@
 	<div class="overlay">
 		<div class="modal" id="consultation">
 			<div class="modal__close">&times;</div>
+			<!-- &times; - спецсимвол html, делает крестик для закрытия модального окна -->
 			<div class="modal__subtitle">Просто заполните форму заявки</div>
 			<div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
 			<form class="feed-form feed-form_mt25" action="#">

@@ -19,7 +19,7 @@
 		text-transform: uppercase;
 		text-align: center;
 		line-height: 48px;
-		transform: skewX(-25deg);
+		transform: skewX(-25deg); // поворот боковых сторон прямоугольников (действует и на текст внутри)
 		margin: 0 5px;
 		cursor: pointer;
 		transition: 0.5s all;
@@ -42,7 +42,7 @@
         justify-content: space-around;
         flex-wrap: wrap;
         &_active {
-            display: flex;
+            display: flex; // показывается, только когда октивно
         }
 	}
 	&-item {
@@ -91,7 +91,7 @@
             background-color: #e8e8e8;
             margin-top: 19px;
             margin-bottom: 21px;
-			border-bottom: none; // чтобы занимала 1px, а не 2
+			border-bottom: none; // полоска, сделаннная с помощью hr, состоит из border и чтобы она занимала в высоту 1px (как в макете), а не 2, надо убрать какую-то одну из границ
 		}
 		&__footer {
             display: flex;
@@ -111,22 +111,22 @@
         }
         &__wrapper {
             display: flex;
-            width: calc(200% + 40px); // 40px учитывает добавлени margin и padding по бокам
+            width: calc(200% + 40px); // 40px учитывает добавление margin и padding по бокам; 200%, чтобы в него пометилось обе части карточки - и та, которая видна, и та, которая скрыта и выезжает по нажатию на кнопку
         }
         &__content {
             width: 100%;
-            margin-right: 0px;
+            margin-right: 0px; // убирается, когда эта часть карточки скрывается по нажатию на кнопку
 			transform: translateX(-110%); // скрытие
             transition: 0.5s all;
             &_active {
 				transform: translateX(0%);
-                margin-right: 20px;
+                margin-right: 20px; 
             }
         }
         &__reverse {
             width: 100%;
             margin-left: 18px;
-            transform: translateX(-100%); // смещение влево, чтобы заместить content
+            transform: translateX(-100%); // смещение влево, чтобы показать его заместить им content
             padding-right: 19px;
             transition: 0.5s all;
             padding-left: 20px;
@@ -159,7 +159,7 @@
 			}
         }
 		&__back {
-            position: absolute;
+            position: absolute;  // ссылка "назад" должна быть в одном месте вне зависимости от того, сколько текста над ней
             bottom: 0;
             left: 50%;
 			transform: translateX(calc(-50% - 9px)); // установить в центре самой карточки, а не списка
